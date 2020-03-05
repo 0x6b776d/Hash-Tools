@@ -17,22 +17,19 @@ using namespace std;
 
 string hashedstring;
 
-const char AlphabetUpper[26] =
-{
-    'A', 'B', 'C', 'D', 'E', 'F', 'G',
-    'H', 'I', 'J', 'K', 'L', 'M', 'N',
-    'O', 'P', 'Q', 'R', 'S', 'T', 'U',
-    'V', 'W', 'X', 'Y', 'Z'
-};
 
-const char AlphabetLower[26] =
+const char AlphabetLower[72] =
 {
     'a', 'b', 'c', 'd', 'e', 'f', 'g',
     'h', 'i', 'j', 'k', 'l', 'm', 'n',
     'o', 'p', 'q', 'r', 's', 't', 'u',
-    'v', 'w', 'x', 'y', 'z'
+    'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G',
+    'H', 'I', 'J', 'K', 'L', 'M', 'N',
+    'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+    'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7',
+    '8', '9', '0', '!', '@', '#', '$', '%', '^', '&',
+    '*', '(', ')'
 };
-
 
 class Color
 {
@@ -105,7 +102,7 @@ void Generatemd5(unsigned int length, std::string s)
         }
     }
 
-    for (unsigned int i = 0; i < 26; i++) // iterate through alphabet
+    for (unsigned int i = 0; i < 72; i++) // iterate through alphabet
     {
         // Create new string with next character
         // Call generate again until string has reached it's length
@@ -132,7 +129,7 @@ void Generatesha512(unsigned int length, std::string s)
         }
     }
 
-    for (unsigned int i = 0; i < 26; i++) // iterate through alphabet
+    for (unsigned int i = 0; i < 72; i++) // iterate through alphabet
     {
         // Create new string with next character
         // Call generate again until string has reached it's length
