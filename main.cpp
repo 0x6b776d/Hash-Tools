@@ -119,7 +119,7 @@ void Generatesha512(unsigned int length, std::string s)
         {
             currenttime();
             cout << Color(7) << "Tried " << s << Color(2) << " [SUCCEEDED] \n";
-            Sleep(99999999999999999);
+            Sleep(99999999999999999);//instead should write to a text file but lazy and autism @TODO
         }
         else
         {
