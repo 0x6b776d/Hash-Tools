@@ -160,11 +160,6 @@ void Cracksha512()
     }
 }
 
-void createsha512hash()
-{
-   
-}
-
 void bruteforcesha512hash()
 {
     system("cls");
@@ -172,11 +167,6 @@ void bruteforcesha512hash()
     cout << Color(7) << "Enter Hashed String: ";
     cin >> hashedstring;
     Cracksha512();
-}
-
-void createmd5hash()
-{
-
 }
 
 void bruteforcemd5hash()
